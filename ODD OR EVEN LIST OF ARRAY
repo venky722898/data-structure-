@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int a,e,o,i,j,s[100];
+    printf("Enter number of elements: ");
+    scanf("%d",&a);
+    for(i=0;i<a;i++)
+    {
+        printf("Enter element: ");
+        scanf("%d",&s[i]);
+    }
+    printf("\nEVEN NUMBER LIST\n");
+    for(e=0;e<a;e++)
+    {
+        if(s[e]%2==0)
+        {
+            printf("%d  ",s[e]);
+        }
+    }
+    printf("\nODD  NUMBER LIST \n");
+    for(o=0;o<a;o++)
+    {
+        if(s[o]%2!=0)
+        {
+            printf("%d  ",s[o]);
+        }
+    }
+}
